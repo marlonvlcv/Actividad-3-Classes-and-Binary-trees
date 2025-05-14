@@ -1,0 +1,37 @@
+class Dog:
+    def __init__(self, size, color, race, price, name):
+        self.size = size
+        self.color = color
+        self.race = race
+        self.price = price
+        self.name = name
+    def walking(self):
+        print(f"{self.name} is walking")
+ 
+dog1 = Dog("big", "brown", "Labrador", 300, "Max")
+dog2 = Dog("big", "white", "Pitbull", 500, "keyla")
+dog3 = Dog("medium", "black", "Bulldog", 400, "Neron")
+dog4 = Dog("big", "golden", "Golden Retriever", 450, "Sansa")
+dog5 = Dog("small", "gray", "Chihuahua", 200, "Hana")
+
+print(dog1.name, dog1.size, dog1.color, dog1.race, dog1.price)
+print(dog2.name, dog2.size, dog2.color, dog2.race, dog2.price)
+print(dog3.name, dog3.size, dog3.color, dog3.race, dog3.price)
+print(dog4.name, dog4.size, dog4.color, dog4.race, dog4.price)
+print(dog5.name, dog5.size, dog5.color, dog5.race, dog5.price)
+
+print(dog1.name)
+dog1.walking()
+
+print(dog2.name)
+dog2.walking()
+
+print(dog3.name)
+dog3.walking()
+
+print(dog4.name)
+dog4.walking()
+
+print(dog5.name)
+dog5.walking()
+
