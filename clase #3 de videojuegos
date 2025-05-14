@@ -1,0 +1,30 @@
+# Clase de videojuegos
+class Game:
+    def __init__(self, title, year, developer, genre, platform):
+        self.title = title
+        self.year = year
+        self.developer = developer
+        self.genre = genre
+        self.platform = platform
+
+    def info(self):
+        return f"{self.title} - {self.genre} ({self.year}) | Desarrollador: {self.developer}, Plataforma: {self.platform}"
+
+    def mensaje(self):
+        print(f"Iniciando {self.title} en {self.platform}...")
+# 5 Instancias
+game1 = Game("Red Dead Redemption 2", 2018, "Rockstar Games", "Acción-Aventura", "PS4/Xbox/PC")
+game2 = Game("GTA IV", 2008, "Rockstar North", "Acción-Aventura", "PS3/Xbox/PC")
+game3 = Game("GTA V", 2013, "Rockstar North", "Acción-Aventura", "PS4/PS5/Xbox/PC")
+game4 = Game("Mafia", 2002, "Illusion Softworks", "Acción", "PC/PS2")
+game5 = Game("Assassin's Creed Odyssey", 2018, "Ubisoft", "RPG de Acción", "PS4/Xbox/PC")
+
+print("\nVideojuegos:")
+print(game1.info())
+print(game2.info())
+print(game3.info())
+print(game4.info())
+print(game5.info())
+
+game1.mensaje()
+game5.mensaje()
