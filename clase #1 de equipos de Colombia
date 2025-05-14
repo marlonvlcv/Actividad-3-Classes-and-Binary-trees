@@ -1,0 +1,31 @@
+# Clase de equipos de Colombia
+class equipos:
+    def __init__(self, name, city, stadium, founded, colors):
+        self.name = name
+        self.city = city
+        self.stadium = stadium
+        self.founded = founded
+        self.colors = colors
+
+    def info(self):
+        return f"{self.name} - Ciudad: {self.city}, Fundado: {self.founded}, Estadio: {self.stadium}, Colores: {self.colors}"
+
+    def partido(self, rival):
+        print(f"{self.name} juega un partido contra {rival}.")
+
+# 5 Instancias
+equipo1 = equipos("Atlético Nacional", "Medellín", "Atanasio Girardot", 1947, "Verde y Blanco")
+equipo2 = equipos("Millonarios", "Bogotá", "El Campín", 1946, "Azul y Blanco")
+equipo3 = equipos("América de Cali", "Cali", "Pascual Guerrero", 1927, "Rojo")
+equipo4 = equipos("Deportivo Cali", "Cali", "Palmaseca", 1912, "Verde y Blanco")
+equipo5 = equipos("Junior", "Barranquilla", "Metropolitano", 1924, "Rojo y Blanco")
+
+print("\nEquipos de Colombia:")
+print(equipo1.info())
+print(equipo2.info())
+print(equipo3.info())
+print(equipo4.info())
+print(equipo5.info())
+
+equipo1.partido("Millonarios")
+equipo3.partido("Deportivo Cali")
