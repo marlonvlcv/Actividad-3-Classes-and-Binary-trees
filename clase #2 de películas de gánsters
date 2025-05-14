@@ -1,0 +1,42 @@
+# Clase de películas de gánsters
+class movie:
+    def __init__(self, title, year, director, main_actor, country):
+        self.title = title
+        self.year = year
+        self.director = director
+        self.main_actor = main_actor
+        self.country = country
+
+    def info(self):
+        return f"{self.title} ({self.year}) - Director: {self.director}, Actor principal: {self.main_actor}, País: {self.country}"
+
+    def frase_famosa(self):
+        if self.title == "Caracortada":
+            return '"¡Saluda a mi pequeño amigo!"'
+        elif self.title == "Enemigos Públicos":
+            return '"Soy John Dillinger. Robo bancos."'
+        elif self.title == "Gangster Americano":
+            return '"El más ruidoso en la sala es el más débil de la sala."'
+        else:
+            return "Sin frase disponible."
+# 5 Instancias
+movie1 = movie("El Padrino", 1972, "Francis Ford Coppola", "Marlon Brando", "EE.UU.")
+movie2 = movie("Caracortada", 1983, "Brian De Palma", "Al Pacino", "EE.UU.")
+movie3 = movie("Buenos Muchachos", 1990, "Martin Scorsese", "Ray Liotta", "EE.UU.")
+movie4 = movie("Enemigos Públicos", 2009, "Michael Mann", "Johnny Depp", "EE.UU.")
+movie5 = movie("Gangster Americano", 2007, "Ridley Scott", "Denzel Washington", "EE.UU.")
+
+print("\nPelículas de gánsters:")
+print(movie1.info())
+print(movie2.info())
+print(movie3.info())
+print(movie4.info())
+print(movie5.info())
+
+print("\nFrases famosas:")
+print(f"{movie1.title}: {movie1.frase_famosa()}")
+print(f"{movie2.title}: {movie2.frase_famosa()}")
+print(f"{movie3.title}: {movie3.frase_famosa()}")
+print(f"{movie4.title}: {movie4.frase_famosa()}")
+print(f"{movie5.title}: {movie5.frase_famosa()}")
+
